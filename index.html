@@ -12,8 +12,23 @@
     <h1 id="title"> Microverse Survey Form </h1> 
     <p id="description"> This is a survey form to understand students' perspectives. </p>   
     <form id="survey-form">
-	<input id="name" type="text" name="std_name" required >
-	<input type="submit" value="submit">
+  <label id="name-label">Name</label>
+      <input id="name" type="text" name="std_name" required  placeholder="Please Enter Your Name">
+      <label id="email-label">Email</label>
+  <input id="email" type="email" name="std-email" required placeholder="Please Enter Your Email">
+  <label id="number-label">Age</label>
+  <input id="number" type="number" name="age" required min="15" max="50" placeholder="Please Enter Your age">
+<label id="option">Current Role</label>
+<select name="dropdown" id="dropdown">
+  <option value="student">student</option>
+  <option value="Professional">Professional</option>
+  <option value="Retired">Retired</option>
+  <option value="Bussninessman">Bussninessman</option>
+</select>
+
+  <input type="submit" value="submit">
+
+
     </form>
 
     <script  src="js/index.js"></script>
